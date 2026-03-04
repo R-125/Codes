@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #0f1b2d;
+  --green: #00c896;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Default dark mode on load */
+html:not(.light) body {
+  background-color: #030712;
+  color: #ffffff;
+}
+
+html.dark body {
+  background-color: #030712;
+  color: #ffffff;
+}
+
+html.light body {
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', 'Hind Siliguri', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #00c896; border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: #00a87a; }
+
+/* Selection */
+::selection { background: #00c896; color: #000; }
+
+/* Bengali font */
+:lang(bn), .font-bengali {
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #00c896, #00a8ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .glass {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+}
