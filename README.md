@@ -292,6 +292,7 @@ Open source. Use it, learn from it, build on it. If you're doing something signi
 Built this because the HSC grind is real and students in Bangladesh deserve better tools — in their own language, for free, that actually work.
 
 - 🐙 GitHub: [@RuHRabin](https://github.com/RuHRabin)
+- Facebook: [Rabin](https://www.facebook.com/M.RakibUlHasanRabin)
 - 🌐 Live Project: [hscscienceplatform.vercel.app](https://hscscienceplatform.vercel.app)
 
 ---
